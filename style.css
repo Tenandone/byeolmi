@@ -1,21 +1,26 @@
 body {
-  background-color: #222;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
   padding: 0;
+  background: #f5f5f5;
+  color: #333;
 }
 
-header, footer {
-  background-color: #111;
+header {
+  background: #222;
+  color: #fff;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
   gap: 30px;
   padding: 0;
 }
@@ -23,4 +28,29 @@ nav ul {
 nav a {
   color: #ffd700;
   text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 140px;
+}
+
+section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 40px;
+  text-align: center;
+}
+
+section.active {
+  display: block;
+  opacity: 1;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
 }

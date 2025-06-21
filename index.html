@@ -7,20 +7,44 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to ParkDigital</h1>
+    <h1>ParkDigital</h1>
     <nav>
       <ul>
-        <li><a href="#">홈</a></li>
-        <li><a href="#">서비스</a></li>
-        <li><a href="#">문의</a></li>
+        <li><a href="#" data-target="home">홈</a></li>
+        <li><a href="#" data-target="about">회사 소개</a></li>
+        <li><a href="#" data-target="portfolio">포트폴리오</a></li>
+        <li><a href="#" data-target="contact">연락처</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <p>이곳은 ParkDigital 연습용 홈페이지입니다.</p>
+    <section id="home" class="active">
+      <h2>환영합니다!</h2>
+      <p>ParkDigital 연습용 단일 페이지입니다.</p>
+    </section>
+    <section id="about">
+      <h2>회사 소개</h2>
+      <p>우리는 실용적인 웹 연습을 추구하는 작은 디지털 팀입니다.</p>
+    </section>
+    <section id="portfolio">
+      <h2>포트폴리오</h2>
+      <ul>
+        <li>✔ 랜딩 페이지 샘플</li>
+        <li>✔ 반응형 레이아웃 테스트</li>
+        <li>✔ 인터랙티브 메뉴 실험</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>연락처</h2>
+      <p>이메일: <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 ParkDigital. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
