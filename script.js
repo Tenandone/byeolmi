@@ -1,13 +1,12 @@
 document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function (e) {
+  link.addEventListener("click", function(e) {
     e.preventDefault();
-    const targetId = this.dataset.target;
+    const targetId = this.getAttribute("data-target");
 
-    document.querySelectorAll("section").forEach(section => {
-      section.classList.remove("active");
+    document.querySelectorAll("main section").forEach(sec => {
+      sec.classList.remove("active");
     });
 
-    const targetSection = document.getElementById(targetId);
-    targetSection.classList.add("active");
+    document.getElementById(targetId).classList.add("active");
   });
 });
