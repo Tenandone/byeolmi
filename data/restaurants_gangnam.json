@@ -1,0 +1,93 @@
+[
+  {
+  "id": "gangnam-hanu-001",
+  "name": "도산뚝배기",
+  "menu": "한우 / 뚝배기",
+  "map": "https://map.naver.com/p/entry/place/1202715954",
+  "blog": "https://search.naver.com/search.naver?where=blog&query=도산뚝배기",
+  "youtube": "https://www.youtube.com/results?search_query=도산뚝배기",
+  "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250519_35%2F1747654659463bXEdR_JPEG%2FKakaoTalk_Photo_2025-05-19-20-35-38_004.jpeg"
+}
+,
+  {
+    "id": "gangnam-hanu-002",
+    "name": "다몽집 신논현본점",
+    "menu": "소고기 / 구이",
+    "map": "https://map.naver.com/p/entry/place/1028354634",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=다몽집%20신논현본점",
+    "youtube": "https://www.youtube.com/results?search_query=다몽집%20신논현본점",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250205_294%2F1738733013695kS1eD_PNG%2FKakaoTalk_20250204_142820908.png"
+  },
+  {
+    "id": "gangnam-hanu-003",
+    "name": "우도옥",
+    "menu": "한우곰탕 / 평양냉면",
+    "map": "https://map.naver.com/p/entry/place/1796542659",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=우도옥",
+    "youtube": "https://www.youtube.com/results?search_query=우도옥",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250519_265%2F1747650530635o6RXp_JPEG%2FIMG_0855.jpeg"
+  },
+  {
+    "id": "gangnam-hanu-004",
+    "name": "남도애찬 강남본점",
+    "menu": "한우 / 장어구이",
+    "map": "https://map.naver.com/p/entry/place/1825277033",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=남도애찬%20강남본점",
+    "youtube": "https://www.youtube.com/results?search_query=남도애찬%20강남본점",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230927_65%2F1695743314349zctxP_JPEG%2FLCH_0718.JPG"
+  },
+  {
+    "id": "gangnam-hanu-005",
+    "name": "모우리 한우",
+    "menu": "암소한우 / 스테이크",
+    "map": "https://map.naver.com/p/entry/place/269479759",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=모우리%20한우",
+    "youtube": "https://www.youtube.com/results?search_query=모우리%20한우",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240111_24%2F1704971111786PJaJ3_JPEG%2FKakaoTalk_20240111_200344374.jpg"
+  },
+  {
+    "id": "gangnam-hanu-006",
+    "name": "국고집",
+    "menu": "국밥 / 돼지갈비",
+    "map": "https://map.naver.com/p/entry/place/1034622849",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=국고집",
+    "youtube": "https://www.youtube.com/results?search_query=국고집",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20231207_37%2F170193586776796qSR_JPEG%2FKakaoTalk_Photo_2023-11-24-17-54-24_001jpeg.jpeg"
+  },
+  {
+    "id": "gangnam-hanu-007",
+    "name": "이복희해장 선릉본점",
+    "menu": "한우 해장국 / 곱창전골",
+    "map": "https://map.naver.com/p/entry/place/1375943999",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=이복희해장%20선릉본점",
+    "youtube": "https://www.youtube.com/results?search_query=이복희해장%20선릉본점",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250712_289%2F1752282922043RVBy1_JPEG%2F%25C4%25C1%25BC%25C1_%25289%2529.jpg"
+  },
+  {
+    "id": "gangnam-hanu-008",
+    "name": "청담백송",
+    "menu": "숙성 한우 / 갈비살",
+    "map": "https://map.naver.com/p/entry/place/1041740236",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담백송",
+    "youtube": "https://www.youtube.com/results?search_query=청담백송",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240112_261%2F1704985971777kYJAa_JPEG%2FKakaoTalk_20240107_192834652_07.jpg"
+  },
+  {
+    "id": "gangnam-hanu-009",
+    "name": "우살롱",
+    "menu": "프리미엄 한우 / 오마카세",
+    "map": "https://map.naver.com/p/entry/place/1729346749",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=우살롱",
+    "youtube": "https://www.youtube.com/results?search_query=우살롱",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241006_58%2F17282210542552mCv7_JPEG%2F%25BF%25EC%25BB%25EC%25B7%25D5_%25B4%25EB%25B9%25AE%25BB%25E7%25C1%25F8.jpg"
+  },
+  {
+    "id": "gangnam-hanu-010",
+    "name": "청월관 도곡점",
+    "menu": "한우 오마카세 / 샤브샤브",
+    "map": "https://map.naver.com/p/entry/place/1857146343",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청월관%20도곡점",
+    "youtube": "https://www.youtube.com/results?search_query=청월관%20도곡점",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241211_170%2F1733897472189dFLbq_JPEG%2F%25C7%25D1%25BF%25EC%25B1%25B8%25C0%25CC_%25B8%25C3%25B1%25E8%25C2%25F7%25B8%25B2_%25C4%25DA%25BD%25BA.jpg"
+  }
+]

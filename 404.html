@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>별미 Byeolmi — 十味</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // GitHub Pages에서 404 발생 시 index.html로 리다이렉트
+    // 원래 경로를 그대로 history 상태에 유지
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <script>
+    // 404에서 index.html로 이동하기 전에 원래 경로 저장
+    sessionStorage.redirect = location.href;
+    window.location.replace("/");
+  </script>
+</body>
+</html>

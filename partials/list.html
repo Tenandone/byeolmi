@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>별미 리스트</title>
+  <link rel="stylesheet" href="css/list.css" />
+
+  <!-- ✅ Font Awesome 아이콘 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <h1>🍽️ 별미 맛집 리스트</h1>
+  <div id="restaurant-list" class="restaurant-list"></div>
+
+  <script>
+    async function loadRestaurants() {
+      try {
+        const res = await fetch("data/restaurants.json");
+        const data = await res.json();
+
+        const container = document.getElementById("restaurant-list");
+        container.innerHTML = "";
+
+        data.forEach(r => {
+          const card = document.createElement("div");
+          card.className = "restaurant-card";
+
+          const imageUrl = r.naver?.imageUrl || r.google?.imageUrl || "";
+
+          card.innerHTML = `
+            <img src="${imageUrl}" alt="${r.name}" class="thumbnail" />
+            <h2>${r.name}</h2>
+            <p class="category">${r.category} | ${r.location}</p>
+
+            <p><i class="fa-solid fa-star" style="color:#2DB400;"></i> 네이버: ${r.naver?.rating} (${r.naver?.reviews}명)</p>
+            <p><i class="fa-solid fa-star" style="color:#DB4437;"></i> 구글: ${r.google?.rating} (${r.google?.reviews}명)</p>
+            <p class="byeolmi"><i class="fa-solid fa-star" style="color:#FF9500;"></i> 별미평점: ${r.byeolmi?.rating}</p>
+
+            <div class="blog-section">
+              <h3><i class="fa-brands fa-blogger-b"></i> 블로그 리뷰</h3>
+              ${r.blog && r.blog.length > 0 ? r.blog.map(b => `
+                <div class="blog-item">
+                  <a href="${b.url}" target="_blank">
+                    <img src="${b.imageUrl}" alt="${b.title}" class="blog-thumb" />
+                    <p>${b.title} - <small>${b.author}</small></p>
+                  </a>
+                </div>
+              `).join("") : "<p>리뷰 없음</p>"}
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.error("데이터 불러오기 실패:", err);
+      }
+    }
+
+    loadRestaurants();
+  </script>
+</body>
+</html>

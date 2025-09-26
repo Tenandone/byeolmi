@@ -1,0 +1,110 @@
+[
+  {
+    "id": "daegu-001",
+    "name": "퍼니독",
+    "menu": "수제 핫도그",
+    "map": "https://map.naver.com/p/search/퍼니독",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=퍼니독",
+    "youtube": "https://www.youtube.com/results?search_query=퍼니독",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-002",
+    "name": "전력화로",
+    "menu": "막창 / 고기구이",
+    "map": "https://map.naver.com/p/search/전력화로",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=전력화로",
+    "youtube": "https://www.youtube.com/results?search_query=전력화로",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-003",
+    "name": "홍식",
+    "menu": "중식 / 일본풍 웍요리",
+    "map": "https://map.naver.com/p/search/홍식",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=홍식",
+    "youtube": "https://www.youtube.com/results?search_query=홍식",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-004",
+    "name": "피키차일드 다이닝",
+    "menu": "이탈리안 레스토랑",
+    "map": "https://map.naver.com/p/search/피키차일드%20다이닝",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=피키차일드%20다이닝",
+    "youtube": "https://www.youtube.com/results?search_query=피키차일드%20다이닝",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-005",
+    "name": "고기부심",
+    "menu": "숙성 제주흑돼지",
+    "map": "https://map.naver.com/p/search/고기부심",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=고기부심",
+    "youtube": "https://www.youtube.com/results?search_query=고기부심",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-006",
+    "name": "에이바이트 키친",
+    "menu": "마라항정살 덮밥 / 라이스",
+    "map": "https://map.naver.com/p/search/에이바이트%20키친",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=에이바이트%20키친",
+    "youtube": "https://www.youtube.com/results?search_query=에이바이트%20키친",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-007",
+    "name": "에이엠",
+    "menu": "스테이크 / 와인",
+    "map": "https://map.naver.com/p/search/에이엠",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=에이엠",
+    "youtube": "https://www.youtube.com/results?search_query=에이엠",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-008",
+    "name": "라스또 스시",
+    "menu": "연어초밥 / 스시",
+    "map": "https://map.naver.com/p/search/라스또%20스시",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=라스또%20스시",
+    "youtube": "https://www.youtube.com/results?search_query=라스또%20스시",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-009",
+    "name": "뭄뭄",
+    "menu": "연어초밥 / 일식",
+    "map": "https://map.naver.com/p/search/뭄뭄",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=뭄뭄",
+    "youtube": "https://www.youtube.com/results?search_query=뭄뭄",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-010",
+    "name": "내안에",
+    "menu": "초밥 / 일식",
+    "map": "https://map.naver.com/p/search/내안에",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=내안에",
+    "youtube": "https://www.youtube.com/results?search_query=내안에",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-011",
+    "name": "티제이버거",
+    "menu": "수제버거",
+    "map": "https://map.naver.com/p/search/티제이버거",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=티제이버거",
+    "youtube": "https://www.youtube.com/results?search_query=티제이버거",
+    "image": "img/sample.png"
+  },
+  {
+    "id": "daegu-012",
+    "name": "무쇠김치삼겹살",
+    "menu": "삼겹살 / 숯불구이",
+    "map": "https://map.naver.com/p/search/무쇠김치삼겹살",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=무쇠김치삼겹살",
+    "youtube": "https://www.youtube.com/results?search_query=무쇠김치삼겹살",
+    "image": "img/sample.png"
+  }
+]

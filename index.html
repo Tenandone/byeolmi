@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>별미 Byeolmi — 十味</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body { margin:0; font-family:sans-serif; background:#f5f5f5; display:flex; justify-content:center; }
+
+    .app-wrapper {
+      width:100%;
+      max-width:700px;
+      min-height:100vh;
+      margin:0 auto;
+      background:#fff;
+      position:relative;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* 헤더 */
+    header { padding:10px 16px; display:flex; align-items:center; gap:10px; background:#fff; border-bottom:1px solid #eee; }
+    header img { height:32px; }
+    header input { flex:1; padding:8px; border:1px solid #ddd; border-radius:8px; }
+
+    /* 전국 / 지역 선택 */
+    .region { padding:16px; background:#fff; margin-top:10px; }
+    .region h2 { margin:0 0 10px; font-size:16px; }
+    .scroll-x { display:flex; overflow-x:auto; gap:10px; }
+    .scroll-x a { flex:0 0 auto; padding:8px 14px; border:1px solid #ddd; border-radius:20px; background:#fff; font-size:14px; text-decoration:none; color:#333; }
+
+    /* 리스트 */
+    .cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:12px; padding:16px; }
+    .card { background:#fff; border:1px solid #eee; border-radius:10px; overflow:hidden; transition:transform .1s; display:flex; flex-direction:column; justify-content:space-between; }
+    .card:hover { transform:translateY(-2px); }
+
+    /* 이미지 박스 */
+    .card .image-box {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+    .card .image-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* 카드 메타정보 */
+    .card .meta { padding:8px; font-size:14px; }
+    .card .name { font-weight:bold; margin-bottom:4px; }
+
+    /* 링크 버튼 */
+    .links { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+    .links a { flex:1; text-align:center; padding:6px 4px; border:1px solid #ddd; border-radius:6px; background:#fafafa; display:flex; align-items:center; justify-content:center; }
+    .links a:hover { background:#f0f0f0; }
+    .links svg { width:24px; height:24px; }
+  </style>
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- 헤더 -->
+    <header>
+      <img src="img/main.png" alt="별미 Byeolmi 로고">
+      <input type="search" id="searchBox" placeholder="맛집, 메뉴 검색">
+    </header>
+
+    <!-- 지역 선택 -->
+    <div class="region">
+      <h2>별미 맛집 탐색</h2>
+      <div class="scroll-x">
+        <a href="/region/gangnam">강남十味</a>
+        <a href="/region/daegu">대구十味</a>
+        <a href="/region/busan">부산十味</a>
+        <a href="/region/gwangju">광주十味</a>
+        <a href="/region/jeju">제주十味</a>
+      </div>
+    </div>
+
+    <!-- 리스트 -->
+    <div class="cards" id="restaurantCards"></div>
+  </div>
+
+  <script>
+  const regionFiles = {
+    gangnam: "data/restaurants_gangnam.json",
+    daegu: "data/restaurants_daegu.json",
+    busan: "data/restaurants_busan.json",
+    gwangju: "data/restaurants_gwangju.json",
+    jeju: "data/restaurants_jeju.json"
+  };
+
+  async function loadRestaurants(region = "gangnam") {
+    try {
+      const res = await fetch(regionFiles[region]);
+      const data = await res.json();
+
+      const container = document.getElementById("restaurantCards");
+      container.innerHTML = "";
+
+      data.forEach(r => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="image-box">
+            <img src="${r.image}" alt="${r.name}">
+          </div>
+          <div class="meta">
+            <div class="name">${r.name}</div>
+            <div>메뉴: ${r.menu}</div>
+            <div class="links">
+              <a href="${r.map}" target="_blank" title="위치">
+                <svg viewBox="0 0 24 24"><path fill="#1E88E5" d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8z"/><circle cx="12" cy="10" r="3" fill="#fff"/></svg>
+              </a>
+              <a href="${r.blog}" target="_blank" title="블로그">
+                <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#03C75A"/><text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="14" font-weight="bold" fill="#fff">N</text></svg>
+              </a>
+              <a href="${r.youtube}" target="_blank" title="유튜브">
+                <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="3" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
+              </a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    } catch (err) {
+      console.error("데이터 불러오기 실패:", err);
+    }
+  }
+
+  function getRegionFromPath() {
+    const parts = window.location.pathname.split("/");
+    return parts[2] || "gangnam";
+  }
+
+  function navigate(region) {
+    if (regionFiles[region]) {
+      history.pushState({}, "", `/region/${region}`);
+      loadRestaurants(region);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const region = getRegionFromPath();
+    loadRestaurants(region);
+
+    // 클릭 이벤트 바인딩
+    document.querySelectorAll(".scroll-x a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+        const parts = href.split("/");
+        const region = parts[2];
+        navigate(region);
+      });
+    });
+  });
+
+  window.addEventListener("popstate", () => {
+    const region = getRegionFromPath();
+    loadRestaurants(region);
+  });
+  </script>
+</body>
+</html>
