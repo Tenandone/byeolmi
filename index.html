@@ -24,9 +24,8 @@
     header img { height:32px; }
 
     /* 소개 문구 */
-    .intro { padding:16px; background:#fff; border-bottom:1px solid #eee; }
-    .intro h1 { margin:0 0 8px; font-size:18px; font-weight:bold; }
-    .intro p { margin:4px 0; color:#555; font-size:14px; }
+    .intro { background:#fdf6ec; border:1px solid #f0e0c0; border-radius:8px; padding:16px; text-align:center; }
+    .intro p { margin:0; font-size:14px; color:#333; }
 
     /* 지역 탭 UI */
     .region { padding:16px 16px 0; background:#fff; margin-top:10px; }
@@ -79,50 +78,40 @@
     .links svg { width:28px; height:28px; }
 
     /* 푸터 */
-footer {
-  background:#f9f9f9;
-  border-top:1px solid #eee;
-  padding:12px;              /* padding도 조금 줄임 */
-  text-align:center;
-  font-size:13px;
-  color:#666;
-  margin-top:auto;
-}
-footer p {
-  margin:4px 0;              /* 글 간격 줄이기 */
-  line-height:1.4;
-}
-footer nav {
-  margin:4px 0;
-}
-footer nav a {
-  color:#666;
-  text-decoration:none;
-  margin:0 6px;
-}
-footer nav a:hover {
-  color:#000;
-}
-
+    footer {
+      background:#f9f9f9;
+      border-top:1px solid #eee;
+      padding:12px;
+      text-align:center;
+      font-size:13px;
+      color:#666;
+      margin-top:auto;
+    }
+    footer p { margin:4px 0; line-height:1.4; }
+    footer nav { margin:4px 0; }
+    footer nav a {
+      color:#666;
+      text-decoration:none;
+      margin:0 6px;
+    }
+    footer nav a:hover { color:#000; }
   </style>
 </head>
 <body>
   <div class="app-wrapper">
     <!-- 헤더 -->
     <header>
-      <img src="/img/main.png" alt="별미 Byeolmi 로고">
+      <img src="./img/main.png" alt="별미 Byeolmi 로고">
     </header>
 
     <!-- 소개 문구 -->
-    <div class="intro" style="background:#fdf6ec; border:1px solid #f0e0c0; border-radius:8px; padding:16px; text-align:center;">
-  <p style="margin:0; font-size:14px; color:#333;">
-    <strong>별미 10미</strong>는 전국에서 엄선한 맛집 리스트입니다.<br>
-    이 외에도 업체 선정을 원하시면 
-    <a href="/privacy.html" style="color:#d35400; font-weight:bold;">별미와 연락하기</a> 로 문의하세요.
-
-  </p>
-</div>
-
+    <div class="intro">
+      <p>
+        <strong>별미 10미</strong>는 전국에서 엄선한 맛집 리스트입니다.<br>
+        이 외에도 업체 선정을 원하시면 
+        <a href="./privacy.html" style="color:#d35400; font-weight:bold;">별미와 연락하기</a> 로 문의하세요.
+      </p>
+    </div>
 
     <!-- 지역 선택 (탭 UI) -->
     <div class="region">
@@ -146,24 +135,23 @@ footer nav a:hover {
     <footer>
       <p>© 2025 별미 Byeolmi — 전국의 별미를 찾아 떠나는 여행</p>
       <nav>
-         <a href="/about.html">About</a> | 
-    <a href="/terms.html">이용약관</a> | 
-    <a href="/privacy.html">개인정보처리방침</a>
+        <a href="./about.html">About</a> | 
+        <a href="./terms.html">이용약관</a> | 
+        <a href="./privacy.html">개인정보처리방침</a>
       </nav>
-      
     </footer>
   </div>
 
   <script>
   const regionFiles = {
-    gangnam: "/data/restaurants_gangnam.json",
-    daegu: "/data/restaurants_daegu.json",
-    busan: "/data/restaurants_busan.json",
-    cheongdam: "/data/restaurants_cheongdam.json",
-    apgujeong: "/data/restaurants_apgujeong.json",
-    nonhyeon: "/data/restaurants_nonhyeon.json",
-    seongsu: "/data/restaurants_seongsu.json",
-    euljiro: "/data/restaurants_euljiro.json"
+    gangnam: "./data/restaurants_gangnam.json",
+    daegu: "./data/restaurants_daegu.json",
+    busan: "./data/restaurants_busan.json",
+    cheongdam: "./data/restaurants_cheongdam.json",
+    apgujeong: "./data/restaurants_apgujeong.json",
+    nonhyeon: "./data/restaurants_nonhyeon.json",
+    seongsu: "./data/restaurants_seongsu.json",
+    euljiro: "./data/restaurants_euljiro.json"
   };
 
   async function loadRestaurants(region = "gangnam") {
@@ -180,7 +168,7 @@ footer nav a:hover {
         card.className = "card";
         card.innerHTML = `
           <div class="image-box">
-            <img src="${r.image}" alt="${r.name}" onerror="this.src='/img/byeolmi.png'">
+            <img src="${r.image}" alt="${r.name}" onerror="this.src='./img/byeolmi.png'">
           </div>
           <div class="meta">
             <div class="name">${r.name}</div>
