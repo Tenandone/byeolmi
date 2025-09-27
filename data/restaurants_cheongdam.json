@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cheongdam-001",
+    "name": "청담 밍글스",
+    "menu": "컨템포러리 한식 / 파인 다이닝",
+    "map": "https://map.naver.com/p/search/청담%20밍글스",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20밍글스",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20밍글스",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200911_263%2F1599792125441WUQCF_JPEG%2Ftjk3-qUcCKYYG0JPH6xF2wHn.jpg"
+  },
+  {
+    "id": "cheongdam-002",
+    "name": "청담 정식당",
+    "menu": "모던 한식 / 코리안 뉴컬리너리",
+    "map": "https://map.naver.com/p/search/청담%20정식당",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20정식당",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20정식당",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20240311_19%2F1710159087668mw045_JPEG%2FMain_Dining_Hall_2.jpg"
+  },
+  {
+    "id": "cheongdam-003",
+    "name": "청담 페어링룸",
+    "menu": "이탈리안 / 와인 페어링",
+    "map": "https://map.naver.com/p/search/청담%20페어링룸",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20페어링룸",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20페어링룸",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231025_229%2F16982190892332LQt5_JPEG%2Fifc1.jpg"
+  },
+  {
+    "id": "cheongdam-004",
+    "name": "청담 새벽집",
+    "menu": "한식 / 갈비탕 / 육회비빔밥",
+    "map": "https://map.naver.com/p/search/청담%20새벽집",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20새벽집",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20새벽집",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231030_186%2F1698635834652tVCD1_PNG%2F%25BB%25F5%25BA%25AE%25C1%25FD_%25B8%25DE%25B4%25BA%25C6%25C7.png"
+  },
+  {
+    "id": "cheongdam-005",
+    "name": "청담 울프강 스테이크하우스",
+    "menu": "스테이크 / 아메리칸 그릴",
+    "map": "https://map.naver.com/p/search/청담%20울프강%20스테이크하우스",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20울프강%20스테이크하우스",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20울프강%20스테이크하우스",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150915_92%2F1442296872893TcPo6_JPEG%2F166865553129828_1.jpg"
+  },
+  
+  
+  
+  {
+    "id": "cheongdam-008",
+    "name": "청담백송",
+    "menu": "숙성 한우 / 갈비살",
+    "map": "https://map.naver.com/p/entry/place/1041740236",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담백송",
+    "youtube": "https://www.youtube.com/results?search_query=청담백송",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240112_261%2F1704985971777kYJAa_JPEG%2FKakaoTalk_20240107_192834652_07.jpg"
+  },
+  {
+    "id": "cheongdam-009",
+    "name": "청담 도쿄사이카보",
+    "menu": "일식 / 스시 / 가정식",
+    "map": "https://map.naver.com/p/search/청담%20도쿄사이카보",
+    "blog": "https://search.naver.com/search.naver?where=blog&query=청담%20도쿄사이카보",
+    "youtube": "https://www.youtube.com/results?search_query=청담%20도쿄사이카보",
+    "image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250905_21%2F1757044849328BVOOO_JPEG%2F20250329_181035.jpg"
+  }
+  
+]
